@@ -49,15 +49,11 @@ TODO: Add long description of the pod here.
     'VideoToolbox',
     'ExternalAccessory'
   ]
-
- 
-
-  
   s.dependency 'AMapLocation-NO-IDFA'
   s.dependency 'AMapSearch-NO-IDFA'
   s.dependency 'AMap2DMap-NO-IDFA'
   
-  #s.vendored_frameworks = ['${PODS_ROOT}/**/*.framework']
+  s.vendored_frameworks = ['${PODS_CONFIGURATION_BUILD_DIR}/**/*.framework']
   
   s.subspec 'ZhijianKitVendor' do |sss|
     sss.dependency 'AFNetworking', '3.0'

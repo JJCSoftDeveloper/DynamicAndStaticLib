@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073D043EA50AA8870E7460DB /* Pods_DynamicAndStaticLibTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A012BADE9EC3C2BD001C751D /* Pods_DynamicAndStaticLibTestDemo.framework */; };
 		1664ADEC216C9EFB00D84608 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1664ADEB216C9EFB00D84608 /* AppDelegate.m */; };
 		1664ADEF216C9EFB00D84608 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1664ADEE216C9EFB00D84608 /* ViewController.m */; };
 		1664ADF2216C9EFB00D84608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1664ADF0216C9EFB00D84608 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0935418BADADB54C741965CC /* Pods-DynamicAndStaticLibTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicAndStaticLibTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1664ADE7216C9EFB00D84608 /* DynamicAndStaticLibTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicAndStaticLibTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1664ADEA216C9EFB00D84608 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1664ADEB216C9EFB00D84608 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		1664ADF6216C9EFC00D84608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1664ADF8216C9EFC00D84608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1664ADF9216C9EFC00D84608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A012BADE9EC3C2BD001C751D /* Pods_DynamicAndStaticLibTestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicAndStaticLibTestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE910F5A4E5EE045D5AE88E /* Pods-DynamicAndStaticLibTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicAndStaticLibTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073D043EA50AA8870E7460DB /* Pods_DynamicAndStaticLibTestDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1664ADE9216C9EFB00D84608 /* DynamicAndStaticLibTestDemo */,
 				1664ADE8216C9EFB00D84608 /* Products */,
+				1C643B53A217519A3D939C30 /* Pods */,
+				A6F5C992760CE7E8B8008670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = DynamicAndStaticLibTestDemo;
 			sourceTree = "<group>";
 		};
+		1C643B53A217519A3D939C30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0935418BADADB54C741965CC /* Pods-DynamicAndStaticLibTestDemo.debug.xcconfig */,
+				BAE910F5A4E5EE045D5AE88E /* Pods-DynamicAndStaticLibTestDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A6F5C992760CE7E8B8008670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A012BADE9EC3C2BD001C751D /* Pods_DynamicAndStaticLibTestDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1664ADFD216C9EFC00D84608 /* Build configuration list for PBXNativeTarget "DynamicAndStaticLibTestDemo" */;
 			buildPhases = (
+				887A3F0CB8E977317F9D9524 /* [CP] Check Pods Manifest.lock */,
 				1664ADE3216C9EFB00D84608 /* Sources */,
 				1664ADE4216C9EFB00D84608 /* Frameworks */,
 				1664ADE5216C9EFB00D84608 /* Resources */,
+				7CCD01AAF45191715C322E43 /* [CP] Embed Pods Frameworks */,
+				66C6EE4206077DDC398687A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66C6EE4206077DDC398687A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-resources.sh",
+				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CCD01AAF45191715C322E43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MTDates/MTDates.framework",
+				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMBadgeView/SAMBadgeView.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMCategories/SAMCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WYPopoverController/WYPopoverController.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYPinYinSearch/ZYPinYinSearch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTDates.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMBadgeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WYPopoverController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYPinYinSearch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		887A3F0CB8E977317F9D9524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicAndStaticLibTestDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1664ADE3216C9EFB00D84608 /* Sources */ = {
@@ -283,14 +401,12 @@
 		};
 		1664ADFE216C9EFC00D84608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0935418BADADB54C741965CC /* Pods-DynamicAndStaticLibTestDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DynamicAndStaticLibTestDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjc.DynamicAndStaticLibTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,14 +415,12 @@
 		};
 		1664ADFF216C9EFC00D84608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE910F5A4E5EE045D5AE88E /* Pods-DynamicAndStaticLibTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DynamicAndStaticLibTestDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjc.DynamicAndStaticLibTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
