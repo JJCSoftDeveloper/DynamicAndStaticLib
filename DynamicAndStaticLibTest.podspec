@@ -33,10 +33,11 @@ TODO: Add long description of the pod here.
 
   s.pod_target_xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework","$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework","$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework","$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
+    'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Pods/**',
     #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   }
-
+  #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework","$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework","$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework","$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
+  #}
   s.libraries = ['z','stdc++.6.0.9','c++']
 
   s.frameworks = [
@@ -49,33 +50,28 @@ TODO: Add long description of the pod here.
     'VideoToolbox',
     'ExternalAccessory'
   ]
-  s.dependency 'AMapLocation-NO-IDFA'
-  s.dependency 'AMapSearch-NO-IDFA'
-  s.dependency 'AMap2DMap-NO-IDFA'
+  #s.dependency 'AMapLocation-NO-IDFA'
+  #s.dependency 'AMapSearch-NO-IDFA'
+  #s.dependency 'AMap2DMap-NO-IDFA'
+  s.vendored_frameworks = ['DynamicAndStaticLibTest/AMapLocation-NO-IDFA/MAMapKit.framework',
+    'DynamicAndStaticLibTest/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
+    'DynamicAndStaticLibTest/AMapLocation-NO-IDFA/AMapLocationKit.framework',
+    'DynamicAndStaticLibTest/AMapSearch-NO-IDFA/AMapSearchKit.framework'
+    ]
+  s.dependency 'AFNetworking', '3.0'
+  s.dependency 'Masonry'
+  s.dependency 'ReactiveObjC', '3.0.0'
+  s.dependency 'Realm','3.3.2'
+  s.dependency 'Texture','2.6'
+  s.dependency 'YYModel'
+  s.dependency 'SAMCategories'
+  s.dependency 'SAMBadgeView'
+  s.dependency 'MJRefresh'
+  s.dependency 'MTDates'
+  s.dependency 'MZAppearance'
+  s.dependency 'WYPopoverController'
+  s.dependency 'YYText'
+  s.dependency 'WebViewJavascriptBridge', '6.0.3'
+  s.dependency 'ZYPinYinSearch'
   
-  #s.vendored_frameworks = ['${PODS_CONFIGURATION_BUILD_DIR}/**/*.framework']
-  
-  s.subspec 'ZhijianKitVendor' do |sss|
-    sss.dependency 'AFNetworking', '3.0'
-  sss.dependency 'Masonry'
-  sss.dependency 'ReactiveObjC', '3.0.0'
-  sss.dependency 'Realm','3.3.2'
-  sss.dependency 'Texture','2.6'
-  sss.dependency 'YYModel'
-  sss.dependency 'SAMCategories'
-  sss.dependency 'SAMBadgeView'
-  sss.dependency 'MJRefresh'
-  sss.dependency 'MTDates'
-  sss.dependency 'MZAppearance'
-  sss.dependency 'WYPopoverController'
-  sss.dependency 'YYText'
-  sss.dependency 'WebViewJavascriptBridge', '6.0.3'
-  sss.dependency 'ZYPinYinSearch'
-    #sss.static_framework = true
-    #sss.dependency 'AMapLocation-NO-IDFA'
-    #sss.dependency 'AMapSearch-NO-IDFA'
-    #sss.dependency 'AMap2DMap-NO-IDFA'
-    #ss.vendored_frameworks =  'Verify-SwiftOC3rd/Vendors/*.framework'
-    #ss.preserve_paths = 'Verify-SwiftOC3rd/Vendors/*.framework', 'Verify-SwiftOC3rd/Vendors/thirdlibs/*.a'
-  end
 end
