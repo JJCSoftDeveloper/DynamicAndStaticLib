@@ -7,7 +7,7 @@ source 'https://github.com/JJCSoftDeveloper/DynamicAndStaticLibTest.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DynamicAndStaticLibTestDemo' do
-  pod 'DynamicAndStaticLib', :path => '../'
+  pod 'DynamicAndStaticLibTest', :path => '../'
 
 end
 
