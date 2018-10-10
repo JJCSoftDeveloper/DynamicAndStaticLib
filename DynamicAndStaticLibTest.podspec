@@ -29,11 +29,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.static_framework = true
+  #s.static_framework = true
 
   s.pod_target_xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Pods/**',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
     #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   }
 
@@ -53,7 +56,7 @@ TODO: Add long description of the pod here.
   s.dependency 'AMapSearch-NO-IDFA'
   s.dependency 'AMap2DMap-NO-IDFA'
   
-  s.vendored_frameworks = ['${PODS_CONFIGURATION_BUILD_DIR}/**/*.framework']
+  #s.vendored_frameworks = ['${PODS_CONFIGURATION_BUILD_DIR}/**/*.framework']
   
   s.subspec 'ZhijianKitVendor' do |sss|
     sss.dependency 'AFNetworking', '3.0'
