@@ -50,12 +50,14 @@ TODO: Add long description of the pod here.
   s.dependency 'AMapLocation-NO-IDFA'
   s.dependency 'AMapSearch-NO-IDFA'
   s.dependency 'AMap2DMap-NO-IDFA'
+
   #s.vendored_frameworks = [
   #'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
   #  'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
    # 'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
   #  'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
   #  ]
+
   s.dependency 'AFNetworking', '3.0'
   s.dependency 'Masonry'
   s.dependency 'ReactiveObjC', '3.0.0'
@@ -81,9 +83,9 @@ TODO: Add long description of the pod here.
     'Security', 
     'VideoToolbox',
     'ExternalAccessory',
-    'MAMapKit.framework',
-    'AMapFoundationKit.framework',
-    'AMapLocationKit.framework',
-    'AMapSearchKit.framework'
+    'MAMapKit',
+    'AMapFoundationKit',
+    'AMapLocationKit',
+    'AMapSearchKit'
   ]
 end
