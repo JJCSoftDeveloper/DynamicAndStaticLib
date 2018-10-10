@@ -107,7 +107,6 @@
 				1664ADE4216C9EFB00D84608 /* Frameworks */,
 				1664ADE5216C9EFB00D84608 /* Resources */,
 				7CCD01AAF45191715C322E43 /* [CP] Embed Pods Frameworks */,
-				66C6EE4206077DDC398687A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,24 +163,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66C6EE4206077DDC398687A7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-resources.sh",
-				"${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicAndStaticLibTestDemo/Pods-DynamicAndStaticLibTestDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7CCD01AAF45191715C322E43 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
