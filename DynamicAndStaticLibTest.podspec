@@ -46,7 +46,10 @@ TODO: Add long description of the pod here.
     'DynamicAndStaticLib/**/**/**/*.{h,m}'
   ]
 
-  
+  s.prefix_header_contents = [
+    '#import "DrawView.h"'
+  ]
+
   s.dependency 'AMapLocation-NO-IDFA'
   s.dependency 'AMapSearch-NO-IDFA'
   s.dependency 'AMap2DMap-NO-IDFA'
