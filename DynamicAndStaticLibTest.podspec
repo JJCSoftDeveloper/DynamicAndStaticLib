@@ -33,10 +33,7 @@ TODO: Add long description of the pod here.
 
   s.pod_target_xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework"',
-    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
+    'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework","$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework","$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework","$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
     #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   }
 
