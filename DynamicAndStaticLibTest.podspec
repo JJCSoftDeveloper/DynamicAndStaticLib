@@ -76,7 +76,7 @@ TODO: Add long description of the pod here.
   s.dependency 'YYText'
   s.dependency 'WebViewJavascriptBridge', '6.0.3'
   s.dependency 'ZYPinYinSearch'
-  
+  s.dependency 'FSCalendar',:git => 'https://github.com/JJCSoftDeveloper/FSCalendar.git'
   s.frameworks = [
     "MapKit", 
     "SystemConfiguration", 

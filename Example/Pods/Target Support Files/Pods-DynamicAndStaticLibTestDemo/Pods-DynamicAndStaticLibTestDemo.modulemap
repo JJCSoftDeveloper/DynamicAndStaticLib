@@ -1,0 +1,6 @@
+framework module Pods_DynamicAndStaticLibTestDemo {
+  umbrella header "Pods-DynamicAndStaticLibTestDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
