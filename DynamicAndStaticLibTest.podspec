@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   s.libraries = ['z','stdc++.6.0.9','c++']
 
   s.source_files = [
-    'DynamicAndStaticLib/**/*.{h,m}',
+    'DynamicAndStaticLibTest/**/*.{h,m}',
   ]
 
   s.prefix_header_contents = [
@@ -55,10 +55,10 @@ TODO: Add long description of the pod here.
   
 
   s.vendored_frameworks = [
-      'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
-      'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
-      'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
-      'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
+      'DynamicAndStaticLibTest/AMap2DMap-NO-IDFA/MAMapKit.framework',
+      'DynamicAndStaticLibTest/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
+      'DynamicAndStaticLibTest/AMapLocation-NO-IDFA/AMapLocationKit.framework',
+      'DynamicAndStaticLibTest/AMapSearch-NO-IDFA/AMapSearchKit.framework'
   ]
 
   #直接依赖静态库
