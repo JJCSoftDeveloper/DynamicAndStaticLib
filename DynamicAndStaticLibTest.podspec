@@ -36,8 +36,12 @@ TODO: Add long description of the pod here.
     'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Pods/**',
     #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   }
-  #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/AMapLocation-NO-IDFA/MAMapKit.framework","$(PODS_ROOT)/AMapFoundation-NO-IDFA/AMapFoundationKit.framework","$(PODS_ROOT)/AMapLocation-NO-IDFA/AMapLocationKit.framework","$(PODS_ROOT)/AMapSearch-NO-IDFA/AMapSearchKit.framework"',
+  #s.xcconfig = { 
+  #      'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+  #  'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Pods/**',
+  #  'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   #}
+
   s.libraries = ['z','stdc++.6.0.9','c++']
 
   s.source_files = [
@@ -50,45 +54,30 @@ TODO: Add long description of the pod here.
     '#import "DrawView.h"'
   ]
 
-  s.dependency 'AMapLocation-NO-IDFA'
-  s.dependency 'AMapSearch-NO-IDFA'
-  s.dependency 'AMap2DMap-NO-IDFA'
+  
 
-  #s.vendored_frameworks = [
-  #'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
-  #  'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
-   # 'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
-  #  'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
-  #  ]
+  s.vendored_frameworks = [
+      'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
+      'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
+      'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
+      'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
+  ]
 
-  s.dependency 'AFNetworking', '3.0'
-  s.dependency 'Masonry'
-  s.dependency 'ReactiveObjC', '3.0.0'
-  s.dependency 'Realm','3.3.2'
-  s.dependency 'Texture','2.6'
-  s.dependency 'YYModel'
-  s.dependency 'SAMCategories'
-  s.dependency 'SAMBadgeView'
-  s.dependency 'MJRefresh'
-  s.dependency 'MTDates'
-  s.dependency 'MZAppearance'
-  s.dependency 'WYPopoverController'
-  s.dependency 'YYText'
-  s.dependency 'WebViewJavascriptBridge', '6.0.3'
-  s.dependency 'ZYPinYinSearch'
-  s.dependency 'FSCalendar',:git => 'https://github.com/JJCSoftDeveloper/FSCalendar.git'
-  s.frameworks = [
-    "MapKit", 
-    "SystemConfiguration", 
-    'CoreLocation', 
-    'CoreTelephony', 
-    'QuartzCore', 
-    'Security', 
-    'VideoToolbox',
-    'ExternalAccessory',
-    'MAMapKit',
-    'AMapFoundationKit',
-    'AMapLocationKit',
-    'AMapSearchKit'
+  #直接依赖静态库
+  #s.dependency 'AMapLocation-NO-IDFA'
+  #s.dependency 'AMapSearch-NO-IDFA'
+  #s.dependency 'AMap2DMap-NO-IDFA'
+
+  #s.frameworks = [
+  #  "MapKit", 
+  #  "SystemConfiguration", 
+  #  'CoreLocation', 
+  #  'CoreTelephony', 
+  #  'QuartzCore', 
+  #  'Security', 
+  #  'MAMapKit',
+  #  'AMapFoundationKit',
+  #  'AMapLocationKit',
+  #  'AMapSearchKit'
   ]
 end
