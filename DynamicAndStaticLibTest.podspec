@@ -46,8 +46,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = [
     'DynamicAndStaticLib/**/*.{h,m}',
-    'DynamicAndStaticLib/**/**/*.{h,m}',
-    'DynamicAndStaticLib/**/**/**/*.{h,m}'
   ]
 
   s.prefix_header_contents = [
