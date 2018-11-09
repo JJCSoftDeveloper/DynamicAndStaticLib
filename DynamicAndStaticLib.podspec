@@ -55,18 +55,18 @@ TODO: Add long description of the pod here.
   s.dependency 'AMapSearch-NO-IDFA'
   s.dependency 'AMap2DMap-NO-IDFA'
   s.dependency 'SDWebImage'
-  #s.frameworks = [
-  #  "MapKit", 
-  #  "SystemConfiguration", 
-  #  'CoreLocation', 
-  #  'CoreTelephony', 
-  #  'QuartzCore', 
-  #  'Security', 
-  #  'MAMapKit',
-  #  'AMapFoundationKit',
-  #  'AMapLocationKit',
-  #  'AMapSearchKit'
-  #]
+  s.frameworks = [
+    "MapKit", 
+    "SystemConfiguration", 
+    'CoreLocation', 
+    'CoreTelephony', 
+    'QuartzCore', 
+    'Security', 
+    'MAMapKit',
+    'AMapFoundationKit',
+    'AMapLocationKit',
+    'AMapSearchKit'
+  ]
 
   #第二种方式 暂时有问题没试出来
   #s.ios.public_header_files = 'DynamicAndStaticLib/**/**/*.{h}'
