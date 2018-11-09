@@ -51,7 +51,7 @@ TODO: Add long description of the pod here.
   ]
 
   s.prefix_header_contents = [
-    '#import "DrawView.h"'
+    '#import "Reachability.h"'
   ]
 
   

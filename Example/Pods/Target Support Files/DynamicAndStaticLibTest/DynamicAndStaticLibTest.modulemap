@@ -1,6 +1,0 @@
-framework module DynamicAndStaticLibTest {
-  umbrella header "DynamicAndStaticLibTest-umbrella.h"
-
-  export *
-  module * { export * }
-}

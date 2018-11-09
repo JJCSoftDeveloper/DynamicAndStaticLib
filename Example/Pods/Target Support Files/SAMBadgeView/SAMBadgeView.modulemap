@@ -1,6 +1,0 @@
-framework module SAMBadgeView {
-  umbrella header "SAMBadgeView-umbrella.h"
-
-  export *
-  module * { export * }
-}
