@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Pods/**',
-    #'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
+    'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/ZhijianKit/ZhijianKit/Framework',
   }
   #s.xcconfig = { 
   #      'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
@@ -52,19 +52,10 @@ TODO: Add long description of the pod here.
     '#import "Reachability.h"'
   ]
 
-  
-
-  s.vendored_frameworks = [
-      'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
-      'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
-      'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
-      'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
-  ]
-
-  #直接依赖静态库
-  #s.dependency 'AMapLocation-NO-IDFA'
-  #s.dependency 'AMapSearch-NO-IDFA'
-  #s.dependency 'AMap2DMap-NO-IDFA'
+  #第一种方式 直接依赖静态库
+  s.dependency 'AMapLocation-NO-IDFA'
+  s.dependency 'AMapSearch-NO-IDFA'
+  s.dependency 'AMap2DMap-NO-IDFA'
 
   #s.frameworks = [
   #  "MapKit", 
@@ -78,4 +69,10 @@ TODO: Add long description of the pod here.
   #  'AMapLocationKit',
   #  'AMapSearchKit'
   #]
+
+  #第二种方式 暂时有问题没试出来
+  #s.ios.public_header_files = 'DynamicAndStaticLib/**/**/*.{h}'
+  #s.vendored_frameworks = 'DynamicAndStaticLib/*.framework'
+  
+  
 end
