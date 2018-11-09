@@ -79,5 +79,5 @@ TODO: Add long description of the pod here.
   #  'AMapFoundationKit',
   #  'AMapLocationKit',
   #  'AMapSearchKit'
-  ]
+  #]
 end
