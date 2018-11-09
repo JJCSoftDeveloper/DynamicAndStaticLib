@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'DynamicAndStaticLibTest'
+  s.name             = 'DynamicAndStaticLib'
   s.version          = '0.0.2'
-  s.summary          = 'A short description of DynamicAndStaticLibTest.'
+  s.summary          = 'A short description of DynamicAndStaticLib.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/JJCSoftDeveloper/DynamicAndStaticLibTest'
+  s.homepage         = 'https://github.com/JJCSoftDeveloper/DynamicAndStaticLib'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '蒋京春' => 'jing4jiang4@163.com' }
-  s.source           = { :git => 'https://github.com/JJCSoftDeveloper/DynamicAndStaticLibTest.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/JJCSoftDeveloper/DynamicAndStaticLib.git', :tag => s.version.to_s }
 
 
   s.ios.deployment_target = '8.0'
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   s.libraries = ['z','stdc++.6.0.9','c++']
 
   s.source_files = [
-    'DynamicAndStaticLibTest/**/*.{h,m}',
+    'DynamicAndStaticLib/**/*.{h,m}',
   ]
 
   s.prefix_header_contents = [
@@ -55,10 +55,10 @@ TODO: Add long description of the pod here.
   
 
   s.vendored_frameworks = [
-      'DynamicAndStaticLibTest/AMap2DMap-NO-IDFA/MAMapKit.framework',
-      'DynamicAndStaticLibTest/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
-      'DynamicAndStaticLibTest/AMapLocation-NO-IDFA/AMapLocationKit.framework',
-      'DynamicAndStaticLibTest/AMapSearch-NO-IDFA/AMapSearchKit.framework'
+      'DynamicAndStaticLib/AMap2DMap-NO-IDFA/MAMapKit.framework',
+      'DynamicAndStaticLib/AMapFoundation-NO-IDFA/AMapFoundationKit.framework',
+      'DynamicAndStaticLib/AMapLocation-NO-IDFA/AMapLocationKit.framework',
+      'DynamicAndStaticLib/AMapSearch-NO-IDFA/AMapSearchKit.framework'
   ]
 
   #直接依赖静态库
