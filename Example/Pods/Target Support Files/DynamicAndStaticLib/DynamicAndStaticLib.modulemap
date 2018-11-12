@@ -1,0 +1,6 @@
+framework module DynamicAndStaticLib {
+  umbrella header "DynamicAndStaticLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

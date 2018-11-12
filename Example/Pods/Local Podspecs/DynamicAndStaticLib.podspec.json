@@ -1,0 +1,62 @@
+{
+  "name": "DynamicAndStaticLib",
+  "version": "0.1.0",
+  "summary": "A short description of DynamicAndStaticLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/JJCSoftDeveloper/DynamicAndStaticLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JJCSoftDeveloper": "jiangjingchun@longfor.com"
+  },
+  "source": {
+    "git": "https://github.com/JJCSoftDeveloper/DynamicAndStaticLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "pod_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES",
+    "LIBRARY_SEARCH_PATHS": "$(SRCROOT)/Pods/**"
+  },
+  "libraries": [
+    "z",
+    "stdc++.6.0.9",
+    "c++"
+  ],
+  "source_files": [
+    "DynamicAndStaticLib/Classes/*.{h,m}"
+  ],
+  "prefix_header_contents": [
+    "#import \"Reachability.h\""
+  ],
+  "dependencies": {
+    "AMapLocation-NO-IDFA": [
+
+    ],
+    "AMapSearch-NO-IDFA": [
+
+    ],
+    "AMap2DMap-NO-IDFA": [
+
+    ],
+    "SDWebImage": [
+
+    ]
+  },
+  "frameworks": [
+    "MapKit",
+    "SystemConfiguration",
+    "CoreLocation",
+    "CoreTelephony",
+    "QuartzCore",
+    "Security",
+    "MAMapKit",
+    "AMapFoundationKit",
+    "AMapLocationKit",
+    "AMapSearchKit"
+  ]
+}
