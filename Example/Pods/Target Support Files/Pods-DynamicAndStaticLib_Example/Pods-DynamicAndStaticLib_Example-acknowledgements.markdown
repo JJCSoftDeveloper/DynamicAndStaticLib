@@ -23,7 +23,7 @@ Copyright © 2014 AutoNavi. All Rights Reserved.
 
 ## DynamicAndStaticLib
 
-Copyright (c) 2018 JJCSoftDeveloper <jiangjingchun@longfor.com>
+Copyright (c) 2018 JJCSoftDeveloper <jing3jiang4@163.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
