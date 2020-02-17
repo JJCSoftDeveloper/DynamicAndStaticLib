@@ -22,7 +22,7 @@ pod 'DynamicAndStaticLib'
 
 ## Author
 
-JJCSoftDeveloper, jiangjingchun@longfor.com
+JJCSoftDeveloper
 
 ## License
 
